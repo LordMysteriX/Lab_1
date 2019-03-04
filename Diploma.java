@@ -1,5 +1,5 @@
 public class Diploma {
-        private int number;
+        public int number;
         public String institutionOfHigherEducation;
         public int yearOfIssue;
         private int numberOfBlank;
@@ -11,7 +11,7 @@ public class Diploma {
 
         }
 
-        public Diploma(String institutionOfHigherEducation, String speciality, String educationalLevel, String qualification, int number, int yearOfIssue, int numberOfBlank) {
+        public Diploma(int number, String institutionOfHigherEducation, int yearOfIssue,int numberOfBlank, String speciality, String educationalLevel, String qualification) {
 
             this.number = number;
             this.institutionOfHigherEducation = institutionOfHigherEducation;
@@ -45,7 +45,7 @@ public class Diploma {
                     qualification;
         }
 
-        public void resetValues(String institutionOfHigherEducation, String speciality, String educationalLevel, String qualification, int number, int yearOfIssue, int numberOfBlank){
+        public void resetValues(int number, String institutionOfHigherEducation, int yearOfIssue,int numberOfBlank, String speciality, String educationalLevel, String qualification){
 
             this.number = number;
             this.institutionOfHigherEducation = institutionOfHigherEducation;
